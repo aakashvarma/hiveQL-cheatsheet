@@ -1,2 +1,3 @@
-# Partitions and Clusters
+# Partitions and Buckets
 
+### Why partitions and clustering?
