@@ -1,10 +1,10 @@
-### Create Database:
+### 1. Create Database:
     CREATE DATABASE IF NOT EXISTS [database_name];
     
-### Show Database:
+### 2. Show Database:
     SHOW DATABASES;
 
-### Create Tables in Hive:
+### 3. Create Tables in Hive:
     CREATE TABLE IF NOT EXISTS [table_name](
         variable1 datatype1,
         variable2 datatype2,
@@ -22,3 +22,11 @@ This is similar to the one above, but instead of rows this is for columns, this 
 #### STORED AS TEXTFILE: 
 This is to tell Hive what type of file to expect. The other type of file that can be consumed is Sequence Files (Hadoop’s binary file format).
 
+### 4. Alter tables in Hive:
+Add columns:
+    ALTER TABLE [table_name]  ADD COLUMNS(id int, name string);
+Replace an existing column with a new column:
+    ALTER TABLE CHANGE [existing column] [new_column] [datatype];
+Ex:
+    ALTER TABLE CHANGE id name_id int;
+    
