@@ -24,9 +24,12 @@ This is to tell Hive what type of file to expect. The other type of file that ca
 
 ### 4. Alter tables in Hive:
 Add columns:
+    
     ALTER TABLE [table_name]  ADD COLUMNS(id int, name string);
 Replace an existing column with a new column:
+    
     ALTER TABLE CHANGE [existing column] [new_column] [datatype];
 Ex:
+    
     ALTER TABLE CHANGE id name_id int;
     
