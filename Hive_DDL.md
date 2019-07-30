@@ -33,3 +33,4 @@ Ex:
     
     ALTER TABLE CHANGE id name_id int;
     
+        Note: While using CHANGE, the precious column will be deleted and a new column will be added. ie. all the datat inside the new column will be NULL.
