@@ -1,2 +1,2 @@
-# hiveQL-cheatsheet
+# hiveQL and SQL-cheatsheet
 
