@@ -42,3 +42,7 @@ Return type: int
 It will return the year/day/hour/minute/second given date respectively
 
 #### 6. weekofyear(string date)
+Return type: int
+
+        > select weekofyear(current_date);
+        returns 38
