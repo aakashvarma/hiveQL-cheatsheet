@@ -1,5 +1,13 @@
 ## Date functions
 
+#### -1. current_timestamp()
+Return type: String
+It shows the current date and time both.
+
+#### 0. current_date()
+Return type: String
+It shows the current date part only excluding the time part.
+
 #### 1. unix_timestamp()
 Return type: Bigint(unittimestamp)
 We get the current unix timestamp in seconds.
@@ -16,7 +24,7 @@ The FROM_UNIXTIME function converts the specified number of seconds from Unix ep
 
     select from_unixtime(unix_timestamp()); reutrns 2019-08-09 06:23:55
 
-#### 4. to_date(string timestamp)
+#### 4. to_date(string timestamp/date)
 Return type: string
 It will fetch and give the date part of a timestamp string
 
@@ -25,7 +33,12 @@ It will fetch and give the date part of a timestamp string
     > select to_date(current_date);
     returns 2019-08-09
     > select to_date(unix_timestamp());
-    returns: ERROR because to_date takes only strings, timestamp, dtaewritable types where as we gave LONG/INT.
+    returns: ERROR because to_date takes only strings, timestamp, datewritable types where as we gave LONG/INT.
     
 > NOTE: select to_date(from_unixtime(unix_timestamp())); ---- returns 2019-08-09
     
+#### 5. year(string date) / day(string date) / hour(string date) / minute(string date) / second(string date)
+Return type: int
+It will return the year/day/hour/minute/second given date respectively
+
+#### 6. weekofyear(string date)
