@@ -55,6 +55,9 @@ It will return the year/day/hour/minute/second given date respectively
 #### 6. weekofyear(string date)
 Return type: int
 
-
         > select weekofyear(current_date);
         returns 38
+
+#### Date Formatting:
+
+    > date_format(current_date(), 'yyyy-MM-dd HH') = '2019-04-16 10';
